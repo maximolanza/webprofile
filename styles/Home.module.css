@@ -54,7 +54,7 @@
   text-align: left;
   justify-content: left;
   height: 80vh;
-
+  overflow-x: hidden;
 }
 
 .greetings span{
@@ -62,10 +62,31 @@
   flex-wrap: nowrap;
 }
 
-.greetings span:last-child{
+ .typeWriter{
   color: #8EAEFF;
 }
 
+.greetings span:nth-last-child(-n+2){
+  display:inline;
+  flex-wrap: wrap;
+}
+
+/*.greetings span:last-child{
+  display: none
+}*/
+
+.greetingsImage{
+  position: absolute;
+  top:180px;
+  right: 0;
+}
+
+.greetingsImage img{
+  position: relative;
+  transform: rotate(290deg);
+  margin-right: -400px !important;
+
+}
 
 .title{
   color: #8EAEFF;

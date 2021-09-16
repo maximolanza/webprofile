@@ -13,6 +13,8 @@
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "typed.js": "^2.0.12",
+    "typewriter-effect": "^2.18.0",
     "vertical-timeline-component-react": "^2.1.2"
   },
   "devDependencies": {
