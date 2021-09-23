@@ -25,8 +25,9 @@ const Skills = () => {
 
   return (
     <>
-      {skillSet.map((skillArea,i) => (
-        <div key={i}className={styles.skillsRow}>
+      <h2 data-aos="fade-left" className={styles.title}>Skills</h2>
+      {skillSet.map((skillArea, i) => (
+        <div key={i} className={styles.skillsRow}>
           {skillArea.map((skill, j) => (
             <SkillCard
               key={j}

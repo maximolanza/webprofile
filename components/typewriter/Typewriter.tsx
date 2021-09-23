@@ -6,11 +6,7 @@ import Typewriter from 'typewriter-effect';
 
 const Typer = () => {
 
-
-
-
     return (
-
         <Typewriter
             options={{
                 strings: ['Software developer'],
@@ -18,7 +14,6 @@ const Typer = () => {
                 loop: true,
             }}
         />
-
     );
 }
 

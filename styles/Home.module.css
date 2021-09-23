@@ -11,11 +11,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all .2s ease-out;
 }
 
 .main {
   padding: 5rem 0;
   width: 100%;
+  /*min-width: 362.05px;*/
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -44,8 +46,27 @@
   font-size: 1.4rem;
   margin: 0 35px;
   height: 20vh;
+  white-space: nowrap;
 }
 
+/*
+.hamburguerLine + span:nth-last-child(2){
+  background-color: red;
+  opacity: 0;
+}
+
+.hamburguerLine + span:nth-last-child(1){
+  position: relative;
+  background-color: pink;
+  transform: rotate(45deg)  translate(-5px, -5px)
+}
+
+.hamburguerLine{
+  position: relative;
+  background-color: green;
+  transform: rotate(-45deg)  translate(-4px, 3px)
+}
+*/
 
 .greetings{
   color: whitesmoke;
@@ -53,8 +74,9 @@
   display: flex;
   text-align: left;
   justify-content: left;
-  height: 80vh;
+  height: 100vh;
   overflow-x: hidden;
+  transition: all .4s ease-in-out;
 }
 
 .greetings span{
@@ -71,15 +93,22 @@
   flex-wrap: wrap;
 }
 
-/*.greetings span:last-child{
-  display: none
-}*/
-
 .greetingsImage{
   position: absolute;
   top:180px;
   right: 0;
 }
+
+#hamburguer {
+  display: none;
+  visibility: hidden;
+}
+#menu {
+ display: flex;
+  visibility:visible;
+}
+
+
 
 .greetingsImage img{
   position: relative;
@@ -196,7 +225,7 @@
 
 
 .projects{
-  height: 400px;
+ 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -215,5 +244,135 @@
   height: 300px;
   border: 1px solid #8EAEFF;
   margin:0;
+  
+  background-color: grey;
 }
 
+.footer{
+  height: 20vh;
+  bottom: 0;
+}
+
+@media (max-width: 1101px) {
+  .container {
+    padding: 0 7rem;
+    transition: all .2s ease-out;
+  }
+
+  .greetingsImage img{
+    margin-right: -350px !important;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 0 3rem;
+    transition: all .2s ease-out;
+  }
+
+  #menu {
+    display: none !important;
+    visibility:hidden;
+  }
+
+  #hamburguer {
+    display: block ;
+    visibility: visible;
+    
+  }
+
+  .hamburguerButton{
+    background: transparent;
+    border: none;
+    overflow: hidden;
+    outline:none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all .2s ease-out;
+    position: fixed;
+    float: left;
+    left:0;
+    top: 0;
+
+  }
+
+  .hamburguerButton:focus{
+    background-color: transparent;
+  }
+  .hamburguerButton:active{
+    background-color: transparent;
+  }
+  .hamburguerButton:hover{
+    background-color: transparent;
+  }
+
+  .hamburguerLine{
+    transition: all .2s ease-out;
+    display: block;
+    background-color: #8EAEFF;
+    height: 3px;
+    width: 20px;
+    padding: 2px 2px;
+    margin: 2px;
+    opacity: 1;
+  }
+  
+  .middleHamb{
+    background-color: red;
+    opacity: 0;
+  }
+
+  .bottomHamb{
+    position: relative;
+    
+    transform: rotate(45deg)  translate(-5px, -5px)
+  }
+
+  .topHamb{
+    position: relative;
+    
+    transform: rotate(-45deg)  translate(-4px, 3px)
+  }
+
+  .greetings{
+    font-size: 2rem;
+    transition: all .4s ease-in-out;
+  }
+}
+
+
+@media (max-width: 540px) {
+
+
+  .greetingsText:nth-last-child(2){
+    width:15ch;
+  }
+
+  .greetingsImage{
+      position: absolute;
+  }
+  
+  .greetingsImage img{
+    margin-right: -150px !important;
+
+  }
+}
+
+@media (max-width: 373px) {
+  .container{
+    padding: 0 1rem;
+    transition: all .2s ease-out;
+  }
+  .greetings{
+    font-size: 1rem;
+    transition: all .2s ease-out;
+  }
+  .greetingsImage img{
+    margin-right: -100px !important;
+
+  }
+}
