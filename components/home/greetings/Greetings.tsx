@@ -1,27 +1,23 @@
 import Typer from "../../typewriter/Typewriter";
-import styles from "../../../styles/Home.module.css";
-import Image from "next/image";
-import greetingsImg from '../../../public/images/home/Blue-in-Jacket.png';
+import Hand from "./Hand";
+
+
 
 const Greetings = () => {
     return (
-        <>
-            <div className={styles.greetingsText}>
+        <div className="greetings-container">
+            <div className="greetings-text">
                 <h1>
                     <span>Hi!</span>
                     <span>I'm Máximo Lanza</span>
-                    <Typer />
+                    <Typer text='Software developer' />
                 </h1>
             </div>
-            <div data-aos="fade-up-left"
-                data-aos-mirror="true"
-                data-aos-once="false"
-                data-aos-anchor-placement="bottom-bottom"
-                aos-duration="3000"
-                className={styles.greetingsImage}>
-                <Image src={greetingsImg} alt="Illustration 3D blue hand making the sign of Spok that means long live and prosper" />
+            <div className="greetings-hand">
+                <Hand />
             </div>
-        </>
+
+        </div>
     );
 }
 

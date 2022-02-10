@@ -6,7 +6,6 @@ import nodejs from '../../../public/images/back/nodejs.png';
 import mysql from '../../../public/images/back/mysql.png';
 import sqlserver from '../../../public/images/back/sqlserver.png';
 import SkillCard from './SkillCard';
-import styles from '../../../styles/Home.module.css';
 
 const Skills = () => {
   const skillSet = [
@@ -25,9 +24,11 @@ const Skills = () => {
 
   return (
     <>
-      <h2 data-aos="fade-left" className={styles.title}>Skills</h2>
+      <h2
+        data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+        className={"title fade-up"}>Skills</h2>
       {skillSet.map((skillArea, i) => (
-        <div key={i} className={styles.skillsRow}>
+        <div key={i} className={"skills-row"}>
           {skillArea.map((skill, j) => (
             <SkillCard
               key={j}

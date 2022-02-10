@@ -1,10 +1,12 @@
 import CustomTimeline from "./CustomTimeline";
-import styles from "../../../styles/Home.module.css";
 
 const Experience = () => {
     return (
         <>
-            <h2 data-aos="fade-right" className={styles.title}>Experience</h2>
+            <h2
+                data-aos="fade-up" data-aos-anchor-placement="top-middle"
+                className={"title fade-up"}
+            >Experience</h2>
             <CustomTimeline />
         </>
     );

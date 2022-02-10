@@ -1,0 +1,68 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "Niña Lobo",
+            "url": "http://ninalobo.vercel.app",
+            "img": "",
+            "alt": "",
+            "description": "",
+            "repositoryUrl": "",
+            "repositoryType": "GitHub",
+            "host": "Vercel",
+            "skills": [
+                "NextJs",
+                "GraphCMS",
+                "Bootstrap"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "New World Army Management",
+            "url": "http://ninalobo.vercel.app",
+            "img": "",
+            "alt": "",
+            "description": "",
+            "repositoryUrl": "",
+            "repositoryType": "GitHub",
+            "host": "Vercel",
+            "skills": [
+                "NextJs",
+                "GraphCMS",
+                "Bootstrap"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Niña Lobo",
+            "url": "http://ninalobo.vercel.app",
+            "img": "",
+            "alt": "",
+            "description": "",
+            "repositoryUrl": "",
+            "repositoryType": "GitHub",
+            "host": "Vercel",
+            "skills": [
+                "NextJs",
+                "GraphCMS",
+                "Bootstrap"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Niña Lobo",
+            "url": "http://ninalobo.vercel.app",
+            "img": "",
+            "alt": "",
+            "description": "",
+            "repositoryUrl": "",
+            "repositoryType": "GitHub",
+            "host": "Vercel",
+            "skills": [
+                "NextJs",
+                "GraphCMS",
+                "Bootstrap"
+            ]
+        }
+    ]
+}

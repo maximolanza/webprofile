@@ -29,7 +29,10 @@ const customTheme = {
 
 const CustomTimeline = () => {
   return (
-    <div data-aos="zoom-out-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+    <div
+      className="fade-up"
+      data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+    >
       <Timeline theme={customTheme} dateFormat='L' lang='en'>
         <Container>
           <YearContent startDate='2020/10' currentYear />

@@ -2,10 +2,12 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { useEffect } from 'react'
 import AOS from 'aos';
+import '../styles/home.css';
 import 'aos/dist/aos.css';
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     AOS.init({
+      disable: 'mobile',
       offset: 100,
       easing: "ease-in-sine",
       anchorPlacement: 'top-bottom',
@@ -16,6 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       animatedClassName: 'aos-animate', // class applied on animation
       useClassNames: true,
     });
+
   }, []);
 
   return <Component {...pageProps} />

@@ -4,12 +4,12 @@ import Typed from 'typed.js';
 import Typewriter from 'typewriter-effect';
 
 
-const Typer = () => {
+const Typer = ({ text }) => {
 
     return (
         <Typewriter
             options={{
-                strings: ['Software developer'],
+                strings: [text],
                 autoStart: true,
                 loop: true,
             }}
